@@ -1,6 +1,6 @@
-p {
+body {
     font-family: 'K2D';
-    font-size: 22px;
+    font-size: 18px;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
     width: 400px;
     height: 400px;
     padding: 20px;
-    border: dashed 1px;
+    border: dashed 1px; /* NOTE: BORDER IS FOR GUIDELINES AND WILL BE ERASED LATER*/
     border-radius: 50%;
     margin: 1px auto 0;
 }
@@ -32,7 +32,6 @@ h1 {
     display: block;
     position: absolute;
     top: 50%; left: 50%;
-    /* width: 4em; height: 4em; */
     margin: -2em;
 }
 .circle-container img { display: block; width: 100%; }
@@ -48,41 +47,46 @@ h1 {
 /* ---------------------------------------------- */
 
 #bookschat {
-    background-color: #e0f7fa;
+    background-color: rgb(164, 209, 247);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
 
 #techchat {
-    background-color: #f3e5f5;
+    background-color: rgb(248, 208, 251);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
 
 #musicchat {
-    background-color: #ffcdd2;
+    background-color: rgb(255, 180, 223);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
 
 #moviechat {
-    background-color: #ffecb3;
+    background-color: rgb(249, 222, 118);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
 
 #sportschat {
-    background-color: #b9f6ca;
+    background-color: rgb(169, 254, 165);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
