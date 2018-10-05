@@ -21,28 +21,27 @@ h1 {
 
 .circle-container {
     position: relative;
-    width: 24em;
-    height: 24em;
-    padding: 2.8em;
-    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    width: 400px;
+    height: 400px;
+    padding: 20px;
     border: dashed 1px;
     border-radius: 50%;
-    margin: 1.75em auto 0;
+    margin: 1px auto 0;
 }
 .circle-container a {
     display: block;
     position: absolute;
     top: 50%; left: 50%;
-    width: 4em; height: 4em;
+    /* width: 4em; height: 4em; */
     margin: -2em;
 }
 .circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
-.deg72 { transform: rotate(72deg) translate(12em) rotate(-72deg); }
-.deg144 { transform: rotate(144deg) translate(12em) rotate(-144deg); }
-.deg216 { transform: rotate(216deg) translate(-12em) rotate(-216deg)}
-.deg288 { transform: rotate(288deg) translate(12em) rotate(-288deg); }
-.deg360 { transform: rotate(360deg) translate(12em) rotate(-360deg); }
+/* .deg0 { transform: translate(12em); } 12em = half the width of the wrapper */
+.deg72 { transform: rotate(72deg) translate(50px) rotate(-72deg); }
+.deg144 { transform: rotate(144deg) translate(50px) rotate(-144deg); }
+.deg216 { transform: rotate(216deg) translate(-20px) rotate(-216deg)}
+.deg288 { transform: rotate(288deg) translate(450px) rotate(-288deg); }
+.deg360 { transform: rotate(360deg) translate(100px) rotate(-360deg); }
 
 /* ---------------------------------------------- */
 /* </ THE CSS FOR POSITIONING ITEMS ON A CIRCLE > */
@@ -50,24 +49,40 @@ h1 {
 
 #bookschat {
     background-color: #e0f7fa;
-
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 #techchat {
     background-color: #f3e5f5;
-
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 #musicchat {
     background-color: #ffcdd2;
-
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 #moviechat {
     background-color: #ffecb3;
-
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
 
 #sportschat {
     background-color: #b9f6ca;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
