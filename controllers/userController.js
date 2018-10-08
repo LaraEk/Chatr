@@ -39,7 +39,7 @@ module.exports = {
   },
   registerUser: function(req, res) {
     console.log(req.body.username, req.body.password)
-    db.User.findOne({username: req.body.username}).then((err,obj) => {
+    db.User.findOne({username: req.body.username}, function (err,obj)  {
         if (err) {
           res.json("already exists")
         } else {

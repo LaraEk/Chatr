@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
 import API from "../../utils/API";
+import {Redirect} from "react-router-dom"
 
 class Register extends Component {
   constructor(props) {
@@ -40,7 +41,13 @@ class Register extends Component {
   }
 
   render() {
+    const { isLoggedIn } = this.state
+
+    if (isLoggedIn === true) {
+      return <Redirect name={this.state.email} to='/' />
+    }
     return (
+        
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
