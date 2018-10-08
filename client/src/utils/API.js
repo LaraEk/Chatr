@@ -20,5 +20,9 @@ export default {
 
   login:  function() {
     return axios.get("/api/users");
+  },
+
+  registerUser: function(userInfo) {
+    return axios.post("/api/users", userInfo);
   }
 };

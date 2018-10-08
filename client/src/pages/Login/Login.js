@@ -3,13 +3,14 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
 import API from "../../utils/API";
 
-class Login extends Component {
+class Register extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      isLoggedIn: false
     };
   }
 
@@ -35,13 +36,13 @@ class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    API.login()
+    API.login({username: this.state.email,
+        password: this.state.password})
       .then(res =>
-
+        {
         console.log(res.data)
-        // {email: this.state.email, password: this.state.password}
-
-        // this.setState({ email: res.data, title: "", author: "", synopsis: "" })
+        this.setState({ isLoggedIn: true})
+        }
       )
       .catch(err => console.log(err));
   }
@@ -81,4 +82,4 @@ class Login extends Component {
   }
 }
 
-export default Login
+export default Register

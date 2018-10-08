@@ -5,6 +5,12 @@ const Nav = () => (
     <a className="navbar-brand" href="/">
       Chatr
     </a>
+    <a className="navbar-brand" href="/login">
+      Login
+    </a>
+    <a className="navbar-brand" href="/register">
+      Register
+    </a>
   </nav>
 );
 

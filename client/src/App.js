@@ -8,6 +8,7 @@ import ChatRoom3 from "./pages/ChatRoom3";
 import ChatRoom4 from "./pages/ChatRoom4";
 import ChatRoom5 from "./pages/ChatRoom5";
 import NoMatch from "./pages/NoMatch";
+import Register from "./pages/Register";
 import Nav from "./components/Nav";
 
 const App = () => (
@@ -15,7 +16,8 @@ const App = () => (
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={Login} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         {/* <Route exact path="/" component={Chat} /> */}
         <Route exact path="/books" component={Chat} />
         <Route exact path="/chat/1" component={ChatRoom} />
