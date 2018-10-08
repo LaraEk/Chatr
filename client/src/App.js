@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./pages/Login"
 import Chat from "./pages/Chat";
 import ChatRoom from "./pages/ChatRoom";
 import ChatRoom2 from "./pages/ChatRoom2";
@@ -14,7 +15,8 @@ const App = () => (
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={Chat} />
+        <Route exact path="/" component={Login} />
+        {/* <Route exact path="/" component={Chat} /> */}
         <Route exact path="/books" component={Chat} />
         <Route exact path="/chat/1" component={ChatRoom} />
         <Route exact path="/chat/2" component={ChatRoom2} />
