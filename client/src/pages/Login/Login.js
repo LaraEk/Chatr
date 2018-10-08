@@ -14,14 +14,6 @@ class Register extends Component {
     };
   }
 
-//   loginUserIn = () => {
-//     API.login()
-//       .then(res =>
-//         console.log(res)
-//         // this.setState({ email: res.data, title: "", author: "", synopsis: "" })
-//       )
-//       .catch(err => console.log(err));
-//   };
 
 
   validateForm() {

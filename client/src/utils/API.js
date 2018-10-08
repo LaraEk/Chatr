@@ -18,8 +18,8 @@ export default {
     return axios.post("/api/books", bookData);
   },
 
-  login:  function() {
-    return axios.get("/api/users");
+  login:  function(userInfo) {
+    return axios.post("/api/users/login", userInfo);
   },
 
   registerUser: function(userInfo) {
