@@ -33,9 +33,11 @@ class Register extends Component {
         username: this.state.email,
         password: this.state.password
         })
-    .then(res =>
-
-      console.log(res.data)
+    .then(res => {
+        if (res.data === "already exists") {
+            alert("User Already Exists")
+        }
+    }
      
       // {email: this.state.email, password: this.state.password}
 

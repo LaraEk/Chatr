@@ -44,7 +44,7 @@ class Register extends Component {
     const { isLoggedIn } = this.state
 
     if (isLoggedIn === true) {
-      return <Redirect name={this.state.email} to='/' />
+      return <Redirect name={this.state.email} to='/chat' />
     }
     return (
         

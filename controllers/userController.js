@@ -37,13 +37,13 @@ module.exports = {
     }
   }).catch(err => res.status(422).json(err));
   },
+  
   registerUser: function(req, res) {
     console.log(req.body.username, req.body.password)
     db.User.findOne({username: req.body.username}, function (err,obj)  {
-        if (err) {
+        if (obj) {
           res.json("already exists")
         } else {
-          console.log(obj)
     bcrypt.hash(req.body.password, saltRound, (err, hash) => {
       db.User.create({username: req.body.username, password: hash}).then(data => res.json(data))
       })

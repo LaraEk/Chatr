@@ -2,10 +2,10 @@ import React from "react";
 
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a className="navbar-brand" href="/">
+    <a className="navbar-brand" href="/chat">
       Chatr
     </a>
-    <a className="navbar-brand" href="/login">
+    <a className="navbar-brand" href="/">
       Login
     </a>
     <a className="navbar-brand" href="/register">
