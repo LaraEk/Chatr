@@ -33,7 +33,9 @@ class Register extends Component {
         password: this.state.password})
       .then(res =>
         {
-        console.log(res.data)
+        if (res.data === "no user") {
+            alert("wrong password")
+        } else
         this.setState({ isLoggedIn: true})
         }
       )
