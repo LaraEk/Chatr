@@ -12,14 +12,14 @@ import Register from "./pages/Register";
 import Nav from "./components/Nav";
 
 const App = () => (
+  <div>
+  <Nav />
   <Router>
     <div>
-      <Nav />
       <Switch>
         <Route exact path="/" component={Login} />
         <Route exact path="/register" component={Register} />
-        {/* <Route exact path="/" component={Chat} /> */}
-        <Route exact path="/chat" component={Chat} />
+        <Route exact path="/chat"  component={Chat}/>
         <Route exact path="/chat/1" component={ChatRoom} />
         <Route exact path="/chat/2" component={ChatRoom2} />
         <Route exact path="/chat/3" component={ChatRoom3} />
@@ -29,6 +29,7 @@ const App = () => (
       </Switch>
     </div>
   </Router>
+  </div>
 );
 
 export default App;

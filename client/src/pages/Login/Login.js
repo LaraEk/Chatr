@@ -3,6 +3,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
 import API from "../../utils/API";
 import {Redirect} from "react-router-dom"
+import Nav from "../../components/Nav"
 
 class Register extends Component {
   constructor(props) {
@@ -43,14 +44,15 @@ class Register extends Component {
   }
 
   render() {
+    let currentUserEmail = this.state.email  
     const { isLoggedIn } = this.state
 
     if (isLoggedIn === true) {
       return <Redirect name={this.state.email} to='/chat' />
     }
     return (
-        
-      <div className="Login">
+        <div>
+      <div className="Login" >
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel>Email</ControlLabel>
@@ -78,6 +80,7 @@ class Register extends Component {
             Login
           </Button>
         </form>
+      </div>
       </div>
     );
   }

@@ -3,10 +3,15 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import {Col, Row} from 'react-materialize'
+import Nav from "../../components/Nav"
 
 
 
 class Chat extends Component {
+
+  constructor(props) {
+    super(props);
+  }
   state = {
     category: [
       {
@@ -69,14 +74,14 @@ class Chat extends Component {
   render() {
     return (
       <div>
-        
+
         {this.state.category.map(topic => (
           <Row>
           <Col size="md-6">
                   <Jumbotron key={topic.topic}>
                     <Link to={"/chat/" + topic._id}>
                       <strong>
-                        {topic.topic}
+                        {topic.topic} {this.props.value}
                       </strong>
                     </Link>
                   </Jumbotron>

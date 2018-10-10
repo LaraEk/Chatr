@@ -32,7 +32,7 @@ class ChatRoom extends React.Component{
                 author: this.state.username,
                 message: this.state.message
             })
-            this.setState({message: ''});
+            this.setState({message: ''})
 
         }
     }
@@ -56,7 +56,7 @@ class ChatRoom extends React.Component{
                                 </div>
                             </div>
                             <div className="card-footer">
-                                    <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({username: ev.target.value})} className="form-control"/>
+                                    <input type="text" placeholder="Username" value={this.state.username} onChange={ev => this.setState({username: ev.target.value})} className="form-control" id="usernamefield"/>
                                     <br/>
                                     <input type="text" placeholder="Message" value={this.state.message} onChange={ev => this.setState({message: ev.target.value})} className="form-control"/>
                                     <br/>
